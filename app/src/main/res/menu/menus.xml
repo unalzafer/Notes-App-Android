@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/lr_and_grid"
+        android:orderInCategory="200"
+        android:title="Görünüm"
+        app:showAsAction="never"
+        ></item>
+
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="200"
+        android:title="Çıkış"
+        app:showAsAction="never"
+        ></item>
+
+</menu>

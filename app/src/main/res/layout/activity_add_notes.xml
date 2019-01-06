@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddNotes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_add_gallery" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Not Başlığı Giriniz"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/etText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:gravity="top|left"
+                        android:hint="Not Detayı Giriniz"
+                        android:inputType="textMultiLine"
+                        android:minHeight="120dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/ibColorBlue"
+                            android:layout_width="@dimen/noteAddColorSize"
+                            android:layout_height="@dimen/noteAddColorSize"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorRandom1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checked" />
+
+                        <ImageButton
+                            android:id="@+id/ibColorPurble"
+                            android:layout_width="@dimen/noteAddColorSize"
+                            android:layout_height="@dimen/noteAddColorSize"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorRandom2"
+                            android:scaleType="fitCenter" />
+
+                        <ImageButton
+                            android:id="@+id/ibColorGreen"
+                            android:layout_width="@dimen/noteAddColorSize"
+                            android:layout_height="@dimen/noteAddColorSize"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorRandom3"
+                            android:scaleType="fitCenter" />
+
+                        <ImageButton
+                            android:id="@+id/ibColorOrange"
+                            android:layout_width="@dimen/noteAddColorSize"
+                            android:layout_height="@dimen/noteAddColorSize"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorRandom4"
+                            android:scaleType="fitCenter" />
+
+                        <ImageButton
+                            android:id="@+id/ibColorRed"
+                            android:layout_width="@dimen/noteAddColorSize"
+                            android:layout_height="@dimen/noteAddColorSize"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorRandom5"
+                            android:scaleType="fitCenter" />
+
+                        <ImageButton
+                            android:id="@+id/ibColorPink"
+                            android:layout_width="@dimen/noteAddColorSize"
+                            android:layout_height="@dimen/noteAddColorSize"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorRandom6"
+                            android:scaleType="fitCenter" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btSaveNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:padding="20dp"
+                        android:text="Not Kaydet"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
