@@ -78,6 +78,8 @@ public class AddNotes extends AppCompatActivity {
         //klavye ilk harf büyük olsun
         etTitle.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
         etText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
+        etText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+
         //kullanıcı veri al
         auth=FirebaseAuth.getInstance();
         user=auth.getCurrentUser();
